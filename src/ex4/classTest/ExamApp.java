@@ -3,13 +3,14 @@ package ex4.classTest;
 public class ExamApp {
 	public static void main(String[] args) {
 		
-		Exam exam1 = new Exam(); // exam1 [kor][eng][math]
-		exam1.kor = 10; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
-		exam1.eng = 20; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
-		exam1.math = 30; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
+		Exam exam = new Exam(); // exam1 [kor][eng][math]
+		exam.kor = 10; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
+		exam.eng = 20; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
+		exam.math = 30; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
 
 		
-		printExam(exam1);
+		printExam(exam);
+		
 		Exam[] exams = new Exam[3];
 		// exam 참조변수 3개가 만들어짐
 		// exam참조변수를 3가지를 만듬
@@ -40,9 +41,11 @@ public class ExamApp {
 		System.out.println("------------------------------------");
 	}
 	
-	private static void printExam(Exam[] exam) {
-		for(int i=0;i<3;i++)
-			System.out.printf("kor: %d \neng: %d\nmath:%d\n ------------------------------------\n" , exam[i].kor , exam[i].eng , exam[i].math);
+	private static void printExam(Exam[] exams) {
+		for(int i=0;i<3;i++) {
+			exams[i] = new Exam(); 
+			printExam(exams);
+		}
 	}
 
 
