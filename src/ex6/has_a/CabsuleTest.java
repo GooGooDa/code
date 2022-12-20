@@ -1,4 +1,4 @@
-package ex5.capsule;
+package ex6.has_a;
 
 public class CabsuleTest {
 	public static void main(String[] args) {

@@ -1,19 +1,32 @@
-package ex5.capsule;
+package ex6.has_a;
 
 import java.util.Scanner;
 
-import ex5.capsule.Exam;
 
 public class Exam {
 	private int kor;
 	private int eng;
 	private int math;
 
+	public void setKor(int kor) {
+		this.kor = kor;
+	}
+
+	public void setEng(int eng) {
+		this.eng = eng;
+	}
+
+	public void setMath(int math) {
+		this.math = math;
+	}
+
 	public void init() {
 		kor = 30;
 		eng = 30;
 		math = 30;
 
+	}
+	public Exam() {
 	}
 
 	public Exam(int kor, int eng, int math) {
@@ -62,11 +75,23 @@ public class Exam {
 
 	}
 
-	private double avg() {
+	public int getKor() {
+		return kor;
+	}
+
+	public int getEng() {
+		return eng;
+	}
+
+	public int getMath() {
+		return math;
+	}
+
+	public double avg() {
 		return total()/3.0;
 	}
 
-	private int total() {
+	public int total() {
 		return kor+eng+math; //계산값 바로 return
 	}
 
