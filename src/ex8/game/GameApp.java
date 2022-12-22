@@ -1,10 +1,15 @@
 package ex8.game;
 
+import java.awt.Frame;
+
 public class GameApp {
 public static void main(String[] args) {
-	Frame frame = new Frame();
+	GameFrame frame = new GameFrame(); //frame 객체
 	
-	frame.s
+	
+	frame.setSize(500,600);
+	frame.setLocation(100,100);
+	frame.setVisible(true);
 
 }
 }
