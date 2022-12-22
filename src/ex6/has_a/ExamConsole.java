@@ -7,11 +7,13 @@ public class ExamConsole {
 	// ExamConsole이 Exam의 객체를 가지고 있음 has_a
 	// Composition has는 직접객체를 가지고있을때
 	// 사용자측에서 직접 부품을 변경한다면 assosiation has_a관계
-	private Exam exam; // this를 통해서 kor을 이용할수 있다 부품화해서 결합됨
 	
+	private Exam exam; // this를 통해서 kor을 이용할수 있다 부품화해서 결합됨
+
 	public ExamConsole() {
 		exam = new Exam();
 	}
+	
 	public void input() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("┌───────────────────────────────────┐");

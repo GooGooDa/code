@@ -13,7 +13,7 @@ public class Exam {
 		kor = 30;
 		eng = 30;
 		math = 30;
-
+		//생성자 이용해서 초기화 해야함 init을 위한 초기화는 지양 
 	}
 
 	public Exam(int kor, int eng, int math) {

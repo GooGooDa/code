@@ -8,10 +8,8 @@ public class ExamApp {
 		exam.eng = 20; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
 		exam.math = 30; // kor은 heap에 있음 stack의 exam1이름을 통해서 접근할수있음
 
-		
 		printExam(exam);
-		
-		Exam[] exams = new Exam[3];
+		Exam[] exams = new Exam[3];		
 		// exam 참조변수 3개가 만들어짐
 		// exam참조변수를 3가지를 만듬
 		// new 생성 동적메모리 할당 heap에 할당
@@ -29,6 +27,7 @@ public class ExamApp {
 		exams[2].kor = 30;
 		exams[2].eng = 30;
 		exams[2].math = 30;
+		
 		printExam(exams);
 	}
 
@@ -46,8 +45,5 @@ public class ExamApp {
 			exams[i] = new Exam(); 
 			printExam(exams);
 		}
+		}
 	}
-
-
-
-}
