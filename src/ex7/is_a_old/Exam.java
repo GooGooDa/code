@@ -1,8 +1,6 @@
-package ex6.has_a;
+package ex7.is_a_old;
 
 import java.util.Scanner;
-
-
 public class Exam {
 	private int kor;
 	private int eng;
@@ -24,7 +22,7 @@ public class Exam {
 		kor = 30;
 		eng = 30;
 		math = 30;
-		//init이라는 method 사용하기보단 생성자로 초기화 시켜주는게 올바름
+
 	}
 	public Exam() {
 		this(0,0,0);
